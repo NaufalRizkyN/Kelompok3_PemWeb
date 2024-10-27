@@ -1,0 +1,203 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0f0f0f;
+    color: white;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(to right, #1a1a1a, #2d2d2d);
+    padding: 1.5rem;
+    color: rgb(255, 12, 12);
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+nav {
+    background-color: #1a1a1a;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #e50914;
+    transform: translateY(-2px);
+}
+
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 3rem;
+}
+
+
+        .about-content {
+            background: linear-gradient(135deg, #2d2d2d, #1a1a1a);
+            padding: 3rem;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .about-content::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(to right, #e50914, #ff454f);
+        }
+
+        .about-content h2 {
+            font-size: 2.5rem;
+            color: #e50914;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .about-content h3 {
+            font-size: 1.8rem;
+            color: #ffffff;
+            margin-bottom: 1.5rem;
+            text-align: left;  
+        } 
+
+        .about-content p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            color: #f0f0f0;
+            text-align: left;
+        }
+
+        .about-content li { 
+            font-size: 1.3rem;
+            color: #f0f0f0;
+            text-align: left;
+        }
+
+        .vision-mission {
+            margin-top: 3rem;
+        }
+
+        .vision-mission h3 {
+            font-size: 1.8rem;
+            color: #ff454f;
+            margin-bottom: 1rem;
+            position: relative;
+            padding-left: 1rem;
+        }
+
+        .vision-mission h3::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 4px;
+            height: 70%;
+            background-color: #e50914;
+            border-radius: 2px;
+        }
+
+        .mission-list {
+            list-style: none;
+            margin-top: 1rem;
+            padding-left: 1rem;
+        }
+
+        .mission-list li {
+            margin-bottom: 1rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .mission-list li::before {
+            content: '•';
+            color: #e50914;
+            position: absolute;
+            left: 0;
+            font-size: 1.5rem;
+        }
+
+        footer {
+            background-color: #1a1a1a;
+            color: #cccccc;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 3rem;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                flex-direction: column;
+                align-items: center;
+                gap: 1rem;
+            }
+
+            .about-content {
+                padding: 2rem;
+            }
+
+            .header-title {
+                font-size: 2rem;
+            }
+
+            .about-content h2 {
+                font-size: 2rem;
+            }
+
+            .vision-mission h3 {
+                font-size: 1.5rem;
+            }
+        }
+
+        /* Animasi */
+        .about-content {
+            animation: fadeIn 1s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }

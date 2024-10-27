@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+
+    <title>CINEVERSE</title>
+    <link rel="stylesheet" href="Pemweb css.css">
+</head>
+<body>
+    <header>
+        <h1>CINEVERSE</h1>
+        <p>Review Film Jujur dan Tanpa Basa-Basi</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="Pemweb.html" class="nav-btn">Beranda</a></li>
+            <li><a href="Pemweb film terbaru.html" class="nav-btn">Film Terbaru</a></li>
+            <li><a href="Pemweb top rating.html" class="nav-btn">Top Rating</a></li>
+            <li><a href="Pemweb kategori.html" class="nav-btn">Kategori</a></li>
+            <li><a href="Pemweb tentang kami.html" class="nav-btn">Tentang Kami</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <div class="movie-grid">
+            <div class="movie-card" onclick="openMoviePage('detail film 1')">
+                <div class="movie-image">
+                    <img src="starwars jeddi.jpg" alt="Star Wars: The Last Jedi">
+                </div>
+                <div class="movie-content">
+                    <h2>Star Wars: The Last Jedi</h2>
+                    <div class="rating">★★★★☆</div>
+                    <p>Film petualangan epik tentang pertempuran galaksi yang mengagumkan.</p>
+                </div>
+            </div>
+            
+            <div class="movie-card" onclick="openMoviePage('detail film 2')">
+                <div class="movie-image">
+                    <img src="Avengers-Endgame.jpg" alt="Avengers: Endgame">
+                </div>
+                <div class="movie-content">
+                    <h2>Avengers: Endgame</h2>
+                    <div class="rating">★★★★★</div>
+                    <p>Kisah akhir dari pertarungan Avengers untuk menyelamatkan dunia.</p>
+                </div>
+            </div>
+            
+            <div class="movie-card" onclick="openMoviePage('detail film 3')">
+                <div class="movie-image">
+                    <img src="nun.jpeg" alt="The Nun">
+                </div>
+                <div class="movie-content">
+                    <h2>The Nun</h2>
+                    <div class="rating">★★★★☆</div>
+                    <p>Film horor yang menegangkan tentang rahasia kelam gereja.</p>
+                </div>
+            </div>
+        </div>
+        <div class="movie-grid">
+            <div class="movie-card" onclick="openMoviePage('detail film 4')">
+                <div class="movie-image">
+                    <img src="007 nt.jpg" alt="James Bond 007: No Time To Die">
+                </div>
+                <div class="movie-content">
+                    <h2>James Bond 007: No Time To Die</h2>
+                    <div class="rating">★★★★☆</div>
+                    <p> Film ini bercerita tentang James Bond yang telah pensiun dari MI6 dan hidup bahagia bersama kekasihnya, Madeleine Swann. Namun, kebahagiaan mereka terganggu ketika anggota Spectre mengincar nyawa Bond.</p>
+                </div>
+            </div>
+            
+            <div class="movie-card" onclick="openMoviePage('detail film 5')">
+                <div class="movie-image">
+                    <img src="ff9.jpg" alt="Fast and Furious 9">
+                </div>
+                <div class="movie-content">
+                    <h2>Fast and Furious 9</h2>
+                    <div class="rating">★★★★★</div>
+                    <p>Film ini menceritakan tentang Dom yang kini hidup tenang bersama Letty dan anaknya.</p>
+                </div>
+            </div>
+            
+            <div class="movie-card" onclick="openMoviePage('detail film 6')">
+                <div class="movie-image">
+                    <img src="dilan 1990.jpeg" alt="Dilan 1990">
+                </div>
+                <div class="movie-content">
+                    <h2>Dilan 1990</h2>
+                    <div class="rating">★★★★☆</div>
+                    <p>Film Dilan 1990 menceritakan tentang kisah cinta remaja di era 1990-an antara Milea dan Dilan.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 CINEVERSE. Hak Cipta Dilindungi.</p>
+    </footer>
+
+    <script>
+        function openMoviePage(movie) {
+            var page = movie + '.html';
+            window.location.href = page;
+        }
+    </script>
+</body>
+</html>
